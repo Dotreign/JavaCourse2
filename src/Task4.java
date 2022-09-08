@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class task1 {
+public class Task4 {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        int line = in.nextInt();
-        if(line > 99 && line < 1000){
+        int year = in.nextInt();
+        if(year%400 == 0 || year%4 == 0 && year%100 != 0){
             System.out.println("True");
         } else {
             System.out.println("False");
